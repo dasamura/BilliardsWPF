@@ -1,0 +1,16 @@
+﻿<Window x:Class="Prac2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:helix="clr-namespace:HelixToolkit.Wpf;assembly=HelixToolkit.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <helix:HelixViewport3D Name="helixViewport">
+     
+            
+            <ModelVisual3D Content="{Binding YourModel3D1}" />
+            <ModelVisual3D Content="{Binding YourModel3D2}" />
+            <ModelVisual3D Content="{Binding YourModel3D3}" />
+            
+        </helix:HelixViewport3D>
+    </Grid>
+</Window>
